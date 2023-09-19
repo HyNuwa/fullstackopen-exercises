@@ -6,8 +6,8 @@ const getAll =()=>{
     return request.then((response) => response.data);
 }
 const personPost=(personObject)=>{
-    const request = axios.post(baseUrl, personObject)
-    return request.then(response => response.data)
+    const request = axios.post(baseUrl, personObject);
+    return request.then(response => response.data);
 }
 const personRemove = (id) => {
     const request = axios.delete(`${baseUrl}/${id}`);

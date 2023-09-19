@@ -26,7 +26,6 @@ const App = () => {
     const personObject ={
       name:newName,
       number:newNumber,
-      id:persons.length + 1,
     }
     let sameName = persons.find((item)=>item.name===newName);
     let sameNumber = persons.find((item)=>item.number===newNumber);
@@ -75,6 +74,7 @@ const App = () => {
 
   const deletePerson = (id, name) => {
     let deletedPerson = window.confirm(`Do you want to delete ${name}?`);
+    console.log(persons)
     if (deletedPerson) {
       personsService
         .personRemove(id)
