@@ -1,5 +1,5 @@
 # Full Stack Open
-___
+
 Full Stack Open 2023 Exercises
 
 - Part 0 - Fundamentals of Web apps
